@@ -1,7 +1,7 @@
     import { useState, useEffect } from "react";
     export function useFetch(endpoint) {
         const URL = `https://api.rawg.io/api/`;
-        const key = "aqui va el key";
+        const key = "key aqui";
         const [data, setData] = useState(null);
         const [loading, setLoading] = useState(true);
         useEffect(()=> {

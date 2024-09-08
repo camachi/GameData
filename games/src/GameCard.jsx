@@ -3,15 +3,31 @@ export function GameCard ({data})
 {   
     //cambio de color metacritic
     const getColor = (score) => {
-    if (score >= 75) {
-      // De 75 a 100: verde
-      return `rgb(0, ${255 * (score / 100)}, 0)`;
+      if(score >=80)
+      {
+        return `rgb(151, 250, 2)`
+      }
+    else if (score >= 75) {
+      
+      return `greenyellow`;
+
     } else if (score >= 50) {
-      // De 50 a 74: amarillo-verde
-      return `rgb(${255 * (1 - score / 100)}, 255, 0)`;
+      
+      return `yellow`;
     } else {
-      // De 0 a 49: rojo-amarillo
-      return `rgb(255, ${255 * (score / 50)}, 0)`;
+
+      return `red`;
+    }
+    
+  };
+
+  const getMetacritic = (metacritic) => {
+    if(metacritic == null)
+    {
+      return "NA";
+    }
+    else{
+      return metacritic;
     }
   };
 
@@ -26,7 +42,7 @@ export function GameCard ({data})
         </div>
         <div className="rating-box">
             <h2 style ={{color: getColor(data.metacritic) }}>
-            {data.metacritic}
+            {getMetacritic(data.metacritic)}
             </h2>
         </div>
     </div>

@@ -36,9 +36,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30%;
-    border: 1px solid  tan;
-    width: 10%;
+    height: 21%;
+    border-bottom: 2px solid  rgb(255, 255, 255);
+    width: 8%;
 }
 
 .name-box
@@ -170,7 +170,7 @@ box-shadow: -2px 11px 61px 7px rgba(111,78,173,1);
     align-items: center;
     
     flex-direction: column;
-    height: 1400px;
+    height: auto;
     width: 100%;
     border: 1px solid yellow;
 }
@@ -181,6 +181,7 @@ box-shadow: -2px 11px 61px 7px rgba(111,78,173,1);
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    height: auto;
     border: px solid green;
 }
 .card-divider{
@@ -254,4 +255,32 @@ box-shadow: 4px 3px 46px -8px rgba(225, 0, 255, 0.75);
 }
 .search::placeholder{
     color: white;
+}
+
+.page-box{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    border: 1px solid hotpink;
+}
+
+.paginado{
+    height: 40px;
+    width: 20%;
+    background: linear-gradient(90deg, rgba(2,2,3,1) 0%, rgba(60,65,79,1) 0%, rgba(153,51,255,1) 0%, rgba(182,77,193,1) 53%, rgba(235,18,208,1) 100%);
+    border: none;
+    border-radius: 4px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.paginado:hover{
+    background: rgb(2,2,3);
+    background: linear-gradient(90deg, rgba(2,2,3,1) 0%, rgba(60,65,79,1) 0%, rgb(158, 82, 235) 0%, rgb(204, 124, 212) 53%, rgb(205, 40, 211) 100%);
+    -webkit-box-shadow: -2px 11px 61px 7px rgba(111,78,173,1);
+-moz-box-shadow: -2px 11px 61px 7px rgba(111,78,173,1);
+box-shadow: -2px 11px 61px 7px rgba(111,78,173,1);
 }
